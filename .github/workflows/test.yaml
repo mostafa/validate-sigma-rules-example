@@ -1,0 +1,9 @@
+name: Validate Sigma rules
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  validate-sigma-rules:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mostafa/validate-sigma-rules@v0

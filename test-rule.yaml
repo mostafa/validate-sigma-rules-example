@@ -1,0 +1,24 @@
+title: Placeholder Title
+id: 578f3903-0c20-4966-8752-63457129e515
+status: test
+description: This is a placeholder description
+references:
+  - https://github.com/marketplace/actions/validate-sigma-rules
+author: Mostafa Moradian
+date: 2024/02/13
+modified: 2024/02/13
+tags:
+  - attack.execution
+logsource:
+  product: linux
+  category: network_connection
+detection:
+  selection:
+    Image|endswith: "/bin/true"
+  filter:
+    DestinationIp:
+      - "127.0.0.1"
+  condition: selection and not filter
+falsepositives:
+  - Unknown
+level: critical
