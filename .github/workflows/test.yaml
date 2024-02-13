@@ -6,4 +6,4 @@ jobs:
   validate-sigma-rules:
     runs-on: ubuntu-latest
     steps:
-      - uses: mostafa/validate-sigma-rules@v0.0.2
+      - uses: mostafa/validate-sigma-rules@v0
