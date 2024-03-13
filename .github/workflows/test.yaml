@@ -6,8 +6,8 @@ jobs:
   validate-sigma-rules:
     runs-on: ubuntu-latest
     steps:
-      - uses: SigmaHQ/validate-sigma-rules@v0
       - name: Setup tmate session
         uses: mxschmitt/action-tmate@v3
         with:
           limit-access-to-actor: true
+      - uses: SigmaHQ/validate-sigma-rules@v0
