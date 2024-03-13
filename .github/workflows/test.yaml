@@ -7,5 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: SigmaHQ/validate-sigma-rules@v0
-        env:
-          GITHUB_ACTION_PATH: ${{ github.workspace }}
+      - name: Setup tmate session
+        uses: mxschmitt/action-tmate@v3
+        with:
+          limit-access-to-actor: true
