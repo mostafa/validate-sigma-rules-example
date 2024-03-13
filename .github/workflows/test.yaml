@@ -7,3 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: SigmaHQ/validate-sigma-rules@v0
+        with:
+          paths: "./"
